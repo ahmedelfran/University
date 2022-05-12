@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design - Easy Tutorials</title>
+    <!-- font Awesome css -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Merriweather:ital,wght@1,300&family=Poppins:wght@100;200;300;400;600;700&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()""></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!--------- about us content  ------------>
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1> We are the world's largest    university </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ut ex quia quibusdam eligendi quidem odio iste maxime sequi 
+                asperiores dolor accusamus laborum quae veniam repudiandae, magnam, 
+                temporibus tenetur ab amet a hic saepe esse. Laudantium 
+                sequi totam dignissimos dolores, earum officia veniam unde error 
+                non nesciunt consequuntur ullam aspernatur veritatis!</p>
+                <button class="bt"><a href="">EXPLORE NOW</a></button>
+            </div>
+            <div class="about-col">
+                <img src="./img/about.jpg" >
+            </div>
+        </div>
+    </section>
+
+
+    <!--------- Footer  ------------>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Nobis voluptatibus sit, assumenda <br>consequuntur cum quidem 
+        aspernatur cumque autem.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <p>Made With <i class="fa-regular fa-heart"></i> by <a href="https://www.facebook.com/a7med.elfran/">  Ahmed Sayed Elfran</a></p>
+    </section>
+
+
+
+    <!------------ JavaScript ---------->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showmenu(){
+            navLinks.style.right = "0"
+        }
+        function hidemenu(){
+            navLinks.style.right = "-200px"
+        }
+
+    </script>
+</body>
+</html>
